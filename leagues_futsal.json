@@ -1,0 +1,2011 @@
+[
+    {
+        "Id": 2662,
+        "Name": "Serie A",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 3978,
+        "Name": "Ekstraklasa",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 5684,
+        "Name": "Eliteserien Futsal",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 123
+    },
+    {
+        "Id": 6809,
+        "Name": "Division 1",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 15532,
+        "Name": "Division 1",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 176
+    },
+    {
+        "Id": 15533,
+        "Name": "1. HMNL",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 55
+    },
+    {
+        "Id": 15534,
+        "Name": "Futsal Liga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 202
+    },
+    {
+        "Id": 15535,
+        "Name": "Liiga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 143
+    },
+    {
+        "Id": 15536,
+        "Name": "D1",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 147
+    },
+    {
+        "Id": 15538,
+        "Name": "NB I",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 57
+    },
+    {
+        "Id": 15539,
+        "Name": "Coppa Italia",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 15540,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 36
+    },
+    {
+        "Id": 15544,
+        "Name": "Eredivisie",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 122
+    },
+    {
+        "Id": 15547,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 15548,
+        "Name": "Liga I",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 78
+    },
+    {
+        "Id": 15550,
+        "Name": "Russian Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 15551,
+        "Name": "SLF",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 86
+    },
+    {
+        "Id": 15552,
+        "Name": "Copa del Rey",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 15553,
+        "Name": "Liga Nacional",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 15554,
+        "Name": "Copa de Espana",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 15555,
+        "Name": "Extra-Liga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 229
+    },
+    {
+        "Id": 15704,
+        "Name": "SuperLiga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 16221,
+        "Name": "Copa Libertadores",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 16274,
+        "Name": "F League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 148
+    },
+    {
+        "Id": 16376,
+        "Name": "Intercontinental Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 16617,
+        "Name": "World Championship Universities",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 16652,
+        "Name": "AFF Futsal Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 18389,
+        "Name": "CONMEBOL Championship U20",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 19273,
+        "Name": "Futsal Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 83
+    },
+    {
+        "Id": 20377,
+        "Name": "Copa America",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 21393,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 42
+    },
+    {
+        "Id": 21459,
+        "Name": "Copa Paulista",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 22113,
+        "Name": "Campeonato Gaucho",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 22234,
+        "Name": "AFC Club Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 22850,
+        "Name": "1. SFL",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 85
+    },
+    {
+        "Id": 23038,
+        "Name": "Segunda Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 23195,
+        "Name": "International Friendlies",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 23197,
+        "Name": "UEFA Futsal Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 24229,
+        "Name": "Super League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 196
+    },
+    {
+        "Id": 24555,
+        "Name": "AFC Futsal Asian Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 24899,
+        "Name": "Liga Kebangsaan",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 116
+    },
+    {
+        "Id": 25362,
+        "Name": "AFC Futsal Championship Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 25454,
+        "Name": "Friendlies Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 25899,
+        "Name": "Cambodia National League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 65
+    },
+    {
+        "Id": 26103,
+        "Name": "Thai Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 30
+    },
+    {
+        "Id": 26750,
+        "Name": "UEFA Champions League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 26851,
+        "Name": "Super Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 26964,
+        "Name": "European Championship Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 27130,
+        "Name": "Super Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 27168,
+        "Name": "International Futsal Tournament",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 30754,
+        "Name": "Scotland Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 240
+    },
+    {
+        "Id": 30827,
+        "Name": "Championship Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 60
+    },
+    {
+        "Id": 30860,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 103
+    },
+    {
+        "Id": 30862,
+        "Name": "Copa Do Brasil U20",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 30863,
+        "Name": "Serie A W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 33145,
+        "Name": "Vietnam Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 9
+    },
+    {
+        "Id": 34728,
+        "Name": "World Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 35318,
+        "Name": "Vietnam National Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 9
+    },
+    {
+        "Id": 35319,
+        "Name": "Championship Higher Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 35757,
+        "Name": "Friendlies National Teams U21",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 35764,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 35766,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 216
+    },
+    {
+        "Id": 35910,
+        "Name": "Championship Bundesliga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 171
+    },
+    {
+        "Id": 35911,
+        "Name": "Meistriliiga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 139
+    },
+    {
+        "Id": 35914,
+        "Name": "Division 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 35921,
+        "Name": "Pro League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 58
+    },
+    {
+        "Id": 35933,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 35945,
+        "Name": "Cuba Provincial Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 199
+    },
+    {
+        "Id": 35946,
+        "Name": "Poland League 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 35979,
+        "Name": "Cyprus Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 75
+    },
+    {
+        "Id": 36006,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 36032,
+        "Name": "SuperCup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 36036,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 216
+    },
+    {
+        "Id": 36236,
+        "Name": "UEFA Euro",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 36277,
+        "Name": "Championship Higher Division Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 36279,
+        "Name": "African Cup of Nations",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 36387,
+        "Name": "Championship Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 36931,
+        "Name": "Pro League Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 58
+    },
+    {
+        "Id": 37066,
+        "Name": "Udmurt Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 37134,
+        "Name": "ALF Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37244,
+        "Name": "Grodno Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37245,
+        "Name": "Mogilev Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37246,
+        "Name": "Yekaterinburg Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 37265,
+        "Name": "Irkutsk Oblast Championship Superleague",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 37266,
+        "Name": "Regional League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37381,
+        "Name": "League Amateur Saint Petersburg",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 37396,
+        "Name": "Irkutsk Oblast Championship League 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 37397,
+        "Name": "Irkutsk Oblast Championship League 1",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 37414,
+        "Name": "Premier League Division 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37415,
+        "Name": "Gomel Championship Division 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37432,
+        "Name": "Minsk Championship Superleague",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37440,
+        "Name": "Gomel Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37481,
+        "Name": "Vitebsk Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37483,
+        "Name": "Bobruisk League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37484,
+        "Name": "Kamenets Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37496,
+        "Name": "Football Territory Champions League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37531,
+        "Name": "Minsk United Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37532,
+        "Name": "Bobruisk League Division 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37533,
+        "Name": "VFL Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37534,
+        "Name": "Minsk Amateur League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37563,
+        "Name": "Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37646,
+        "Name": "ALF Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 37704,
+        "Name": "Volkovyssk Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 38108,
+        "Name": "Friendly Tournament",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 38200,
+        "Name": "Pobeda Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 187
+    },
+    {
+        "Id": 38851,
+        "Name": "Championship Superleague",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 100
+    },
+    {
+        "Id": 39780,
+        "Name": "Major League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 40276,
+        "Name": "Liga Futsal",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 40984,
+        "Name": "Campeonato Cearense",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 41394,
+        "Name": "Russia Premier league East",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 41410,
+        "Name": "Russia Division 1 West",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 41411,
+        "Name": "Russia Division 1",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 41528,
+        "Name": "Liga Nacional",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 50
+    },
+    {
+        "Id": 41562,
+        "Name": "Ukraine Cup Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 229
+    },
+    {
+        "Id": 41887,
+        "Name": "Croatian Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 55
+    },
+    {
+        "Id": 41900,
+        "Name": "Montenegro Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 247
+    },
+    {
+        "Id": 42011,
+        "Name": "Pernambucano",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 42026,
+        "Name": "Carioca Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 42036,
+        "Name": "1 Liga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 42037,
+        "Name": "SuperLiga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 42122,
+        "Name": "Primera Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 42221,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 229
+    },
+    {
+        "Id": 42243,
+        "Name": "Campeonato Paranaense",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 42257,
+        "Name": "Higher League W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 229
+    },
+    {
+        "Id": 42270,
+        "Name": "Campeonato Carioca",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 42288,
+        "Name": "Serbia 1st Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 244
+    },
+    {
+        "Id": 42290,
+        "Name": "Ekstraklasa W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 42357,
+        "Name": "Copa de Espana Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 42557,
+        "Name": "Russia Cup Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 42584,
+        "Name": "1st Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 75
+    },
+    {
+        "Id": 42672,
+        "Name": "Georgia League Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 42
+    },
+    {
+        "Id": 42675,
+        "Name": "Champion East Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 43056,
+        "Name": "Brazil Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 43232,
+        "Name": "Serbia Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 244
+    },
+    {
+        "Id": 43245,
+        "Name": "Super Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 43246,
+        "Name": "Super Cup Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 43253,
+        "Name": "Super Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 43388,
+        "Name": "Italy Serie A2",
+        "Season": "",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 43523,
+        "Name": "League 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 42
+    },
+    {
+        "Id": 43784,
+        "Name": "Slovenia Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 85
+    },
+    {
+        "Id": 43785,
+        "Name": "League Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 43825,
+        "Name": "Romanian Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 78
+    },
+    {
+        "Id": 43877,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 57
+    },
+    {
+        "Id": 43930,
+        "Name": "Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 238
+    },
+    {
+        "Id": 43932,
+        "Name": "Primera Division Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 44052,
+        "Name": "Bulgaria National Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 178
+    },
+    {
+        "Id": 44169,
+        "Name": "Liiga W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 143
+    },
+    {
+        "Id": 44233,
+        "Name": "NB II Liga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 57
+    },
+    {
+        "Id": 44287,
+        "Name": "Cup Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 44501,
+        "Name": "CONCACAF Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 44701,
+        "Name": "Cup W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 44820,
+        "Name": "Moldova National Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 37
+    },
+    {
+        "Id": 44926,
+        "Name": "Brazil League Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 45416,
+        "Name": "U19 Internationals",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 45580,
+        "Name": "U21 Internationals",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 45649,
+        "Name": "England Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 243
+    },
+    {
+        "Id": 45652,
+        "Name": "England Championship W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 243
+    },
+    {
+        "Id": 46360,
+        "Name": "Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 198
+    },
+    {
+        "Id": 46563,
+        "Name": "Tronadon Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 46595,
+        "Name": "Brazil Copa Goias",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 46612,
+        "Name": "Carioca U20",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 46897,
+        "Name": "Friendly Tournament",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 229
+    },
+    {
+        "Id": 46898,
+        "Name": "Segunda Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 47757,
+        "Name": "UAE Futsal League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 163
+    },
+    {
+        "Id": 47758,
+        "Name": "Club Friendlies",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 48237,
+        "Name": "Liga Metropolitana",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 48361,
+        "Name": "Bahrain League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 179
+    },
+    {
+        "Id": 48749,
+        "Name": "Brazil Camp.Goiano",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 49004,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 5
+    },
+    {
+        "Id": 49619,
+        "Name": "Major League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 231
+    },
+    {
+        "Id": 49949,
+        "Name": "Primera Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 230
+    },
+    {
+        "Id": 50280,
+        "Name": "Second League.",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 244
+    },
+    {
+        "Id": 50749,
+        "Name": "2 Liga",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 202
+    },
+    {
+        "Id": 50813,
+        "Name": "U20  Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 57
+    },
+    {
+        "Id": 51012,
+        "Name": "Nicaragua Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 34
+    },
+    {
+        "Id": 51265,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 158
+    },
+    {
+        "Id": 51266,
+        "Name": "Catarinense",
+        "Season": "",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 52939,
+        "Name": "Liga Argos",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 197
+    },
+    {
+        "Id": 53065,
+        "Name": "Liga Nacional",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 53247,
+        "Name": "Major League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 128
+    },
+    {
+        "Id": 53611,
+        "Name": "Cup W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 53703,
+        "Name": "Liga 2",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 171
+    },
+    {
+        "Id": 53721,
+        "Name": "Kyrgyz Futsal Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 150
+    },
+    {
+        "Id": 53919,
+        "Name": "Superleague",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 150
+    },
+    {
+        "Id": 54554,
+        "Name": "England FA National Series Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 243
+    },
+    {
+        "Id": 54560,
+        "Name": "England FA National Series",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 243
+    },
+    {
+        "Id": 54575,
+        "Name": "League 1 W ",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 22
+    },
+    {
+        "Id": 54576,
+        "Name": "Super League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 240
+    },
+    {
+        "Id": 54822,
+        "Name": "Futsal. Brazil. Brazilian Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 54839,
+        "Name": "European Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 55475,
+        "Name": "Saudi Arabia League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 80
+    },
+    {
+        "Id": 55587,
+        "Name": "Super Cup W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 55986,
+        "Name": "Latvia Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 36
+    },
+    {
+        "Id": 56070,
+        "Name": "Supercopa W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 56161,
+        "Name": "Bulgaria Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 178
+    },
+    {
+        "Id": 56215,
+        "Name": "Campeonato Nacional",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 199
+    },
+    {
+        "Id": 56284,
+        "Name": "Euro Futsal U19",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 56314,
+        "Name": "National Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 65
+    },
+    {
+        "Id": 56334,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 198
+    },
+    {
+        "Id": 56529,
+        "Name": "Syria Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 93
+    },
+    {
+        "Id": 56566,
+        "Name": "Bosnia and Herzegovina Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 174
+    },
+    {
+        "Id": 56977,
+        "Name": "Argentina 3rd League",
+        "Season": "",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 57143,
+        "Name": "Spain. Primera Dividion. W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 57146,
+        "Name": "Brazil Copa RS W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 57356,
+        "Name": "Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 161
+    },
+    {
+        "Id": 57856,
+        "Name": "Chile Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 195
+    },
+    {
+        "Id": 58028,
+        "Name": "UEFA Euro Championship. W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 58072,
+        "Name": "Paraguay Liga Premium",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 221
+    },
+    {
+        "Id": 58133,
+        "Name": "Asian Games W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 58137,
+        "Name": "Southeast Asian Games W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 58221,
+        "Name": "South East Asian Games",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 58265,
+        "Name": "Gulf Games 2022 Kuwait Round Robin",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 58285,
+        "Name": "Matches 2x20mins W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 58389,
+        "Name": "Cup W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 58500,
+        "Name": "Brazil Taca U20",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 58784,
+        "Name": "Primera Division",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 18
+    },
+    {
+        "Id": 58934,
+        "Name": "Primera Division B",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 59728,
+        "Name": "Premier Liga W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 198
+    },
+    {
+        "Id": 59735,
+        "Name": "Camp Sergipano",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 59758,
+        "Name": "Friendlies Internationals U19",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60160,
+        "Name": "Copa Argentina",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 60360,
+        "Name": "European University Games",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60361,
+        "Name": "World Cup. Universities. W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60425,
+        "Name": "WUC Futsal",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60452,
+        "Name": "European Universities Games W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60468,
+        "Name": "World University Championship. Men. Portugal.",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60469,
+        "Name": "Wuc Futsal W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60470,
+        "Name": "UNCAF U20",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 60486,
+        "Name": "Championship League W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 148
+    },
+    {
+        "Id": 60610,
+        "Name": "Bolivia Liga Nacional",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 71
+    },
+    {
+        "Id": 61224,
+        "Name": "Copa Mundo W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 61343,
+        "Name": "Super cup",
+        "Season": "",
+        "SportId": 687887,
+        "LocationId": 78
+    },
+    {
+        "Id": 61531,
+        "Name": "CONMEBOL U20 Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 61533,
+        "Name": "Futsal. Team. International Tournament. U20",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 61560,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 163
+    },
+    {
+        "Id": 61677,
+        "Name": "Legends Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 79
+    },
+    {
+        "Id": 61741,
+        "Name": "Czech Republic Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 202
+    },
+    {
+        "Id": 61789,
+        "Name": "Nordic Countries Futsal Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 61833,
+        "Name": "Finalissima",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 61834,
+        "Name": "Finalissima",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 62106,
+        "Name": "Primera W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 142
+    },
+    {
+        "Id": 62133,
+        "Name": "Super Cup W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    },
+    {
+        "Id": 62154,
+        "Name": "SuperLeague",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 48
+    },
+    {
+        "Id": 62174,
+        "Name": " Championship U19",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 78
+    },
+    {
+        "Id": 62349,
+        "Name": "Romania 2nd League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 78
+    },
+    {
+        "Id": 62668,
+        "Name": "South American Games W Futsal",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 62669,
+        "Name": "South American Games Futsal Men",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 63735,
+        "Name": "Campeonato Gaucho Women ",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 64146,
+        "Name": "Italy Super Cup Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 64974,
+        "Name": "First League Mongolia ",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 108
+    },
+    {
+        "Id": 65351,
+        "Name": "CAFA Championship. W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 65625,
+        "Name": "Friendlies National Teams U19",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 65659,
+        "Name": "Pro League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 17
+    },
+    {
+        "Id": 65881,
+        "Name": "Makor League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 65
+    },
+    {
+        "Id": 66088,
+        "Name": "Western Australia Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 172
+    },
+    {
+        "Id": 66127,
+        "Name": "Gramado Super Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 66209,
+        "Name": "F League Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 148
+    },
+    {
+        "Id": 66501,
+        "Name": "France Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 147
+    },
+    {
+        "Id": 66652,
+        "Name": "Super League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 126
+    },
+    {
+        "Id": 66653,
+        "Name": "Matches 2X20mins",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 66659,
+        "Name": "Championship Premier League",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 108
+    },
+    {
+        "Id": 66782,
+        "Name": "Brazil Super Cup W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 67146,
+        "Name": "Matches 2x20mins",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 215
+    },
+    {
+        "Id": 67182,
+        "Name": "Championship W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 30
+    },
+    {
+        "Id": 67200,
+        "Name": "Greece Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 48
+    },
+    {
+        "Id": 67269,
+        "Name": "Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 173
+    },
+    {
+        "Id": 67531,
+        "Name": "Albania National Championship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 166
+    },
+    {
+        "Id": 67699,
+        "Name": "Hungarian Cup Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 57
+    },
+    {
+        "Id": 67834,
+        "Name": "Iran Championship U23",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 67951,
+        "Name": "Clubs World Cup U21 at Brazil",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 67968,
+        "Name": "F League Ocean Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 148
+    },
+    {
+        "Id": 68184,
+        "Name": "Second indoor soccer league",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 60
+    },
+    {
+        "Id": 68420,
+        "Name": "Iran Division 1",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 238
+    },
+    {
+        "Id": 68446,
+        "Name": "Brazil Santa Catarina Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 68467,
+        "Name": "NB I Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 57
+    },
+    {
+        "Id": 68600,
+        "Name": "Copa Libertadores W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 68602,
+        "Name": "Copa De Oro Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 203
+    },
+    {
+        "Id": 69330,
+        "Name": "World Club Cup W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 69926,
+        "Name": "Liga Paulista",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 183
+    },
+    {
+        "Id": 70272,
+        "Name": "Conmebol Liga Evolucion",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 70276,
+        "Name": "Conmebol U20 Campionship",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 71234,
+        "Name": "Nations Cup",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 71522,
+        "Name": "Copa America W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 248
+    },
+    {
+        "Id": 71833,
+        "Name": "New South Wales Championship W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 172
+    },
+    {
+        "Id": 71869,
+        "Name": "Iran Championship U23",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 238
+    },
+    {
+        "Id": 71987,
+        "Name": "Championship Premier League W",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 172
+    },
+    {
+        "Id": 72013,
+        "Name": "Division 2 Women",
+        "Season": "All",
+        "SportId": 687887,
+        "LocationId": 76
+    }
+]

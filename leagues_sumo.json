@@ -1,0 +1,58 @@
+[
+    {
+        "Id": 37007,
+        "Name": "Haru Basho. Osaka",
+        "Season": "All",
+        "SportId": 1149107,
+        "LocationId": 148
+    },
+    {
+        "Id": 41842,
+        "Name": "Kyushu Basho Tokyo",
+        "Season": "All",
+        "SportId": 1149107,
+        "LocationId": 148
+    },
+    {
+        "Id": 42563,
+        "Name": "Hatsu Basho. Tokyo",
+        "Season": "All",
+        "SportId": 1149107,
+        "LocationId": 148
+    },
+    {
+        "Id": 43587,
+        "Name": "March Grand Sumo Tournament",
+        "Season": "All",
+        "SportId": 1149107,
+        "LocationId": 248
+    },
+    {
+        "Id": 58157,
+        "Name": "May Grand Tournament",
+        "Season": "All",
+        "SportId": 1149107,
+        "LocationId": 148
+    },
+    {
+        "Id": 60419,
+        "Name": "Japan. Nagoya Basho. Nagoya",
+        "Season": "All",
+        "SportId": 1149107,
+        "LocationId": 148
+    },
+    {
+        "Id": 68253,
+        "Name": "Sumo Japan Natsu Basho Tokyo",
+        "Season": "All",
+        "SportId": 1149107,
+        "LocationId": 248
+    },
+    {
+        "Id": 71041,
+        "Name": "Aki Basho Tokyo",
+        "Season": "",
+        "SportId": 1149107,
+        "LocationId": 148
+    }
+]
