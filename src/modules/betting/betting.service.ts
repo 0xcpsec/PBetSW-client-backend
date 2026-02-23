@@ -18,6 +18,36 @@ const BETS_COLLECTION = 'stra188_bets';
 
 /** Bet status: waiting (before deduct) → running (after deduct). Later: won | lost | void | refunded when settled. */
 
+/** BetType + BetTeam → odds document field name for DisplayOdds. */
+const ODDS_FIELD_BY_BETTYPE_BETTEAM: Record<string, string> = {
+  '1_h': 'odds1a', '1_a': 'odds2a',
+  '2_h': 'odds1a', '2_a': 'odds2a',
+  '3_h': 'odds1a', '3_a': 'odds2a',
+  '5_1': 'com1', '5_2': 'com2', '5_x': 'comx',
+  '7_h': 'odds1a', '7_a': 'odds2a',
+  '8_h': 'odds1a', '8_a': 'odds2a',
+  '12_h': 'odds1a', '12_a': 'odds2a',
+  '15_1': 'com1', '15_2': 'com2', '15_x': 'comx',
+  '6_0-1': 'cs00', '6_2-3': 'cs01', '6_4-6': 'cs10', '6_7-over': 'cs11',
+  '14_0:0': 'cs00', '14_1:1': 'cs11', '14_1:2': 'cs12', '14_2:1': 'cs21', '14_2:2': 'cs22',
+  '16_0:0': 'cs00', '16_0:1': 'cs01', '16_0:2': 'cs02', '16_1:0': 'cs10', '16_1:1': 'cs11', '16_1:2': 'cs12', '16_2:0': 'cs20', '16_2:1': 'cs21', '16_2:2': 'cs22',
+  '126_0-1': 'cs00', '126_2-3': 'cs01', '126_4-over': 'cs10',
+  '127_0:0': 'cs00', '127_1:1': 'cs11', '127_1:2': 'cs12', '127_2:1': 'cs21', '127_2:2': 'cs22',
+  '128_oo': 'cs11', '128_oe': 'cs12', '128_eo': 'cs21', '128_ee': 'cs22',
+  '413_0:0': 'cs00', '413_0:1': 'cs01', '413_0:2': 'cs02', '413_0:3': 'cs03', '413_0:4': 'cs04',
+  '413_1:0': 'cs10', '413_1:1': 'cs11', '413_1:2': 'cs12', '413_1:3': 'cs13', '413_1:4': 'cs14',
+  '413_2:0': 'cs20', '413_2:1': 'cs21', '413_2:2': 'cs22', '413_2:3': 'cs23', '413_2:4': 'cs24',
+  '413_3:0': 'cs30', '413_3:1': 'cs31', '413_3:2': 'cs32', '413_3:3': 'cs33', '413_3:4': 'cs34',
+  '413_4:0': 'cs40', '413_4:1': 'cs41', '413_4:2': 'cs42', '413_4:3': 'cs43', '413_4:4': 'cs44',
+  '413_aos': 'cs99',
+};
+
+function getOddsFieldName(betType: unknown, betTeam: unknown): string | null {
+  if (betType == null) return null;
+  const k = `${String(betType).trim()}_${String(betTeam ?? '').trim().toLowerCase()}`;
+  return ODDS_FIELD_BY_BETTYPE_BETTEAM[k] ?? null;
+}
+
 function channelCollectionPrefix(channelId: string): string {
   const safe = String(channelId).replace(/[^a-zA-Z0-9_]/g, '_');
   return `ch_${safe}`;
@@ -355,8 +385,8 @@ export class BettingService {
     return {
       sportType: match?.sporttype ?? match?.sportType ?? 1,
       matchId,
-      liveHomeScore: match?.liveHomeScore ?? match?.homescore ?? match?.liveHome ?? 0,
-      liveAwayScore: match?.liveAwayScore ?? match?.awayscore ?? match?.liveAway ?? 0,
+      liveHomeScore: match?.livehomescore,
+      liveAwayScore: match?.liveawayscore,
       hls: match?.hls ?? 0,
       llp: match?.llp ?? 0,
       timerSuspend: match?.timerSuspend ?? false,
@@ -408,7 +438,7 @@ export class BettingService {
       Choice: item.ChoiceValue != null ? String(item.ChoiceValue) : '',
       Hdp2_1: item.Line != null ? String(item.Line) : (item.Hdp1 != null ? String(item.Hdp1) : ''),
       MRPercentage: '',
-      LiveScore: '[0-0]',
+      LiveScore: `[${item.Hscore}-${item.Ascore}]`,
       LeagueName: '',
       OddsInfo: '',
       OddsInfo_HT: '',
@@ -425,7 +455,7 @@ export class BettingService {
       TriggerMatchId: item.Matchid != null ? String(item.Matchid) : '',
       HashCode: '',
       LiveStatus: 'Trực tiếp',
-      OriginLiveScore: '0-0',
+      OriginLiveScore: `[${item.Hscore}-${item.Ascore}]`,
       Liveindicator: true,
     }));
 
@@ -523,20 +553,29 @@ export class BettingService {
       if (bettype !== undefined) filter.bettype = bettype;
       if (matchid !== undefined) filter.matchid = matchid;
 
-      let found: { odds: Record<string, unknown>; stableId: string } | null = null;
+      let found: { odds: Record<string, unknown>; match: Record<string, unknown> | null; stableId: string } | null = null;
       for (const stableId of stableIds) {
         const prefix = channelCollectionPrefix(stableId);
         const oddsColl = this.connection.collection(prefix + '_odds');
-        const oddsDoc = await oddsColl.findOne(filter) as Record<string, unknown> | null;
-        if (oddsDoc) {
-          found = { odds: oddsDoc, stableId };
-          break;
+        const oddsDoc = (await oddsColl.findOne(filter)) as Record<string, unknown> | null;
+        if (!oddsDoc) continue;
+
+        const oddsMatchId = oddsDoc.matchid != null ? Number(oddsDoc.matchid) : matchid ?? null;
+        let match: Record<string, unknown> | null = null;
+        if (oddsMatchId != null) {
+          const matchesColl = this.connection.collection(prefix + '_matches');
+          match = (await matchesColl.findOne({ matchid: oddsMatchId, _removedAt: { $exists: false } })) as Record<string, unknown> | null;
+          if (!match) continue;
         }
+
+        found = { odds: oddsDoc, match, stableId };
+        break;
       }
       if (!found) return null;
 
-      const ticket = await this.buildTicketFromOdds(
+      const ticket = await this.buildTicketFromOddsAndMatch(
         found.odds,
+        found.match,
         found.stableId,
         item,
       );
@@ -550,89 +589,140 @@ export class BettingService {
     };
   }
 
-  private async buildTicketFromOdds(
+  private async buildTicketFromOddsAndMatch(
     odds: Record<string, unknown>,
+    match: Record<string, unknown> | null,
     stableId: string,
     requestItem: Record<string, unknown>,
   ): Promise<Record<string, unknown>> {
     const prefix = channelCollectionPrefix(stableId);
     const matchid = odds.matchid != null ? Number(odds.matchid) : null;
-    let match: Record<string, unknown> | null = null;
     let league: Record<string, unknown> | null = null;
 
-    if (matchid != null) {
-      const matchesColl = this.connection.collection(prefix + '_matches');
-      match = (await matchesColl.findOne({ matchid: matchid, _removedAt: { $exists: false } })) as Record<string, unknown> | null;
-      const leagueid = match?.leagueid ?? match?.leagueId;
+    if (match != null) {
+      const leagueid = match.leagueid ?? match.leagueId;
       if (leagueid != null) {
         const leaguesColl = this.connection.collection(prefix + '_leagues');
         league = (await leaguesColl.findOne({ leagueid: Number(leagueid), _removedAt: { $exists: false } })) as Record<string, unknown> | null;
       }
     }
 
-    const oddsVal = odds.odds ?? odds.Odds ?? odds.price;
+    const betType = requestItem.Bettype ?? odds.bettype;
+    const betTeam = requestItem.Betteam ?? odds.betteam;
+    const oddsFieldName = getOddsFieldName(betType, betTeam);
+    const dbOddsRaw = oddsFieldName != null ? odds[oddsFieldName] : undefined;
+    const dbOddsVal = dbOddsRaw != null && dbOddsRaw !== '' ? Number(dbOddsRaw) : (odds.odds ?? odds.Odds ?? odds.price);
+    const displayOddsStr = dbOddsVal != null && !Number.isNaN(Number(dbOddsVal)) ? String(Number(dbOddsVal)) : (odds.odds != null ? String(Number(odds.odds)) : '0');
+
+    const requestOdds = requestItem.Odds;
+    const requestOddsStr = requestOdds != null && requestOdds !== '' ? String(Number(requestOdds)) : null;
+    const oddsChanged = requestOddsStr != null && requestOddsStr !== displayOddsStr;
+    const message = oddsChanged
+      ? `Tỷ lệ cược đã thay đổi từ ${requestOddsStr} thành ${displayOddsStr}.`
+      : (odds.message ?? odds.Message ?? null);
+
+    const oddsVal = dbOddsVal ?? odds.odds ?? odds.Odds ?? odds.price;
+    const oddsNum = oddsVal != null ? Number(oddsVal) : 0;
+    const line = requestItem.Line ?? odds.line ?? 0;
+    const lineNum = typeof line === 'number' ? line : Number(line) || 0;
+    const hdp1 = odds.hdp1 ?? odds.Hdp1 ?? 0;
+    const hdp2 = odds.hdp2 ?? odds.Hdp2 ?? 0;
+    const hdp1Num = typeof hdp1 === 'number' ? hdp1 : Number(hdp1) || 0;
+    const hdp2Num = typeof hdp2 === 'number' ? hdp2 : Number(hdp2) || 0;
+
     const homeName = match?.home ?? match?.Home ?? match?.homename ?? '';
     const awayName = match?.away ?? match?.Away ?? match?.awayname ?? '';
     const leagueName = league?.name ?? league?.Name ?? league?.leaguename ?? '';
+    const displayTime = match?.displayTime ?? match?.DisplayTime ?? match?.matchTime ?? '';
+    const isLive = (match?.kickofftime != null && Number(match?.kickofftime) <= Math.floor(Date.now() / 1000)) || false;
+    const betStake = requestItem.Stake != null && requestItem.Stake !== '' ? String(requestItem.Stake) : '30';
+    const minbet = odds.minbet ?? odds.Minbet ?? '30';
+    const maxbet = odds.maxbet ?? odds.Maxbet ?? '54,495';
+    const bettypeName = odds.bettypeName ?? odds.BettypeName ?? 'Tài/Xỉu';
+    const oddsStatus = odds.oddsStatus ?? odds.status ?? odds.OddsStatus ?? 'running';
+    const leagueId = league?.leagueid ?? league?.leagueId ?? 0;
 
     return {
       TicketType: requestItem.Type ?? odds.type ?? 'OU',
-      Minbet: '30',
-      Maxbet: '3,515',
-      Bet: '',
+      Minbet: minbet != null ? String(minbet) : '30',
+      Maxbet: maxbet != null ? String(maxbet) : '54,495',
+      Bet: betStake,
       QuickBet: '1::::',
       SeqNo: 0,
-      Line: requestItem.Line ?? odds.line ?? 0,
-      DisplayHDP: '',
-      Hdp1: odds.hdp1 ?? odds.Hdp1 ?? 0,
-      Hdp2: odds.hdp2 ?? odds.Hdp2 ?? 0,
-      DisplayOdds: oddsVal != null ? String(Number(oddsVal)) : '',
-      DisplayOddsPair: '',
-      SrcOdds: oddsVal != null ? Number(oddsVal) : 0,
-      OddsBeforeOddsBoost: '',
-      OddsBoost: '',
-      sinfo: '',
+      Line: lineNum,
+      DisplayHDP: hdp1Num !== 0 || hdp2Num !== 0 ? String(lineNum) : null,
+      Hdp1: hdp1Num,
+      Hdp2: hdp2Num,
+      DisplayOdds: displayOddsStr,
+      DisplayOddsPair: odds.displayOddsPair ?? odds.DisplayOddsPair ?? null,
+      SrcOdds: oddsNum,
+      OddsBeforeOddsBoost: odds.oddsBeforeOddsBoost ?? odds.OddsBeforeOddsBoost ?? null,
+      OddsBoost: odds.oddsBoost ?? odds.OddsBoost ?? null,
+      sinfo: odds.sinfo ?? requestItem.sinfo ?? null,
       OddsID: odds.oddsid ?? requestItem.Oddsid,
-      Betteam: requestItem.Betteam ?? odds.betteam ?? '',
-      LiveScore: true,
-      LiveHomeScore: requestItem.Hscore ?? 0,
-      LiveAwayScore: requestItem.Ascore ?? 0,
+      Betteam: requestItem.Betteam ?? odds.betteam ?? 'a',
+      LiveScore: isLive === true,
+      LiveHomeScore: requestItem.Hscore ?? match?.liveHomeScore ?? match?.homescore ?? 0,
+      LiveAwayScore: requestItem.Ascore ?? match?.liveAwayScore ?? match?.awayscore ?? 0,
       SuggestStake: 0,
       RecommendType: 0,
-      BetID: '',
+      BetID: odds.betId ?? requestItem.BetID ?? null,
       ChoiceValue: requestItem.ChoiceValue ?? odds.choiceValue ?? '',
-      BettypeName: 'FT.1X2',
-      HomeId: match?.homeid ?? 0,
-      AwayId: match?.awayid ?? 0,
+      BettypeName: bettypeName != null ? String(bettypeName) : 'Tài/Xỉu',
+      HomeId: match?.homeid ?? match?.homeId ?? 0,
+      AwayId: match?.awayid ?? match?.awayId ?? 0,
       HomeName: homeName,
       AwayName: awayName,
       LeagueName: leagueName,
       Bettype: String(requestItem.Bettype ?? odds.bettype ?? ''),
-      ParentBetType: 0,
-      SportType: match?.sporttype ?? 1,
+      ParentBetType: odds.parentBetType ?? odds.ParentBetType ?? 0,
+      SportType: match?.sporttype ?? match?.sportType ?? 1,
       SportName: 'Bóng đá',
       GameName: '',
-      IsLive: true,
+      IsLive: isLive === true,
       IsInPlay: requestItem.IsInPlay ?? false,
       Matchid: matchid ?? requestItem.Matchid,
-      ParentMatchid: requestItem.parentMatchId ?? 0,
-      MatchCode: null,
-      LeagueGroupId: 0,
-      Code: 0,
+      ParentMatchid: requestItem.parentMatchId ?? match?.parentMatchid ?? 0,
+      MatchCode: match?.matchCode ?? match?.MatchCode ?? null,
+      LeagueGroupId: league?.leagueGroupId ?? league?.group ?? 0,
+      Code: odds.code ?? 0,
       ErrorCode: 0,
-      Message: null,
-      isOddsChange: false,
-      isLineChange: false,
-      isScoreChange: false,
-      OddsStatus: 'running',
+      Message: message,
+      isOddsChange: oddsChanged || odds.isOddsChange === true,
+      isLineChange: odds.isLineChange ?? false,
+      isScoreChange: odds.isScoreChange ?? false,
+      AutoAcceptSec: odds.autoAcceptSec ?? odds.AutoAcceptSec ?? null,
+      MRPercentage: odds.mrPercentage ?? odds.MRPercentage ?? '',
+      OddsInfo: odds.oddsInfo ?? odds.OddsInfo ?? null,
+      SrcOddsInfo: odds.srcOddsInfo ?? odds.SrcOddsInfo ?? null,
+      OddsStatus: oddsStatus != null ? String(oddsStatus) : 'running',
       UseBonus: 0,
-      DisplayTime: '',
-      HasParlay: true,
+      DisplayTime: displayTime != null ? String(displayTime) : null,
+      HasParlay: odds.hasParlay ?? true,
       PriceType: 0,
       BonusID: 0,
       BonusType: 0,
-      OddsType: requestItem.OddsType ?? 4,
-      IsCashoutEnabled: true,
+      BetHintMsg: odds.betHintMsg ?? null,
+      Common: {
+        ErrorCode: odds.commonErrorCode ?? 0,
+        ErrorMsg: odds.commonErrorMsg ?? null,
+      },
+      Nolan: false,
+      Tenet: false,
+      PDHyalpsiD: hdp1Num !== 0 || hdp2Num !== 0 ? String(lineNum) : null,
+      sddOyalpsiD: odds.displayOddsPair ?? odds.DisplayOddsPair ?? null,
+      riaPsddOyalpsiD: displayOddsStr,
+      BetRecommends: odds.betRecommends ?? [],
+      Guid: odds.guid ?? odds.Guid ?? null,
+      TicketTime: odds.ticketTime ?? 0,
+      IsOfferParlayBoost: false,
+      OddsPair: odds.oddsPair ?? 0,
+      LeagueId: leagueId != null ? Number(leagueId) : 0,
+      LuckyDrawMinBet: odds.luckyDrawMinBet ?? null,
+      BetTimeConstraint: odds.betTimeConstraint ?? match?.betTimeConstraint ?? null,
+      OddsType: requestItem.OddsType != null ? Number(requestItem.OddsType) : 4,
+      IsCashoutEnabled: odds.isCashoutEnabled ?? true,
+      ScoreChallenge: odds.scoreChallenge ?? null,
     };
   }
 }
